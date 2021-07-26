@@ -69,8 +69,8 @@ MCSMD5(NSString *str) {
     NSAssert(_serverURL != nil, @"The serverURL can't be nil!");
     
     NSURL *serverURL = _serverURL;
-    if ( [URL.host isEqualToString:serverURL.host] )
-        return URL;
+//     if ( [URL.host isEqualToString:serverURL.host] )
+//         return URL;
     
     NSURLComponents *components = [NSURLComponents componentsWithURL:serverURL resolvingAgainstBaseURL:NO];
     components.path = URL.path;
